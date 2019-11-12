@@ -4,6 +4,7 @@ This repository contains all the presentation, documentation and the virtual mac
 
 ## Presentation & Video
 
+* For the PDF, Epub, Mobi versions of the documentation check out [releases](https://github.com/appsecco/defcon-26-workshop-attacking-and-auditing-docker-containers/releases)
 * The detailed step by step gitbook documentation can be found at `gitbook` folder
 * Video presentation of this workshop is presented at [OWASP Bay Area Chapter](https://www.meetup.com/Bay-Area-OWASP/events/253585296/)
 
