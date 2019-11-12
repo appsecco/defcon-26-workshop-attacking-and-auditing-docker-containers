@@ -1,0 +1,81 @@
+Attacking & Auditing Docker Containers using Open Source:
+    ☐ Distributes the USB keys and ask them to copy workshop-content folder. Ask them to pass usb and give it back
+Introduction(10-Minutes):
+    ☐ Introduction to the training
+        ☐ pre prequirements for students
+        ☐ outcomes & take aways
+        ☐ what we are not covering
+    ☐ Trainer introduction
+    ☐ Disclaimer
+    ☐ Agenda
+Environment Setup(15-Minutes):
+    ☐ Imporint virtual machines
+    ☐ Loging into virtual machines
+    ☐ SSH into virtual machines
+    ☐ Common issues troubleshooting steps
+Docker Quick start - Fast Track(30-Minutes):
+    ☐ docker run hello-world
+        ☐ what happens when you run the docker run command
+    ☐ terminology, docker hub
+    ☐ docker run commands
+    ☐ docker commands with useful options
+    ☐ docker volumes and networks
+    ☐ portainer
+Attacking Docker Containers(90-Minutes):
+    ☐ Insecure volume mount scenario and exploitation
+        ☐ Starting the ctf vm
+        ☐ Accessing the vulnerable application
+        ☐ Exploiting the application for reverse shell
+        ☐ Performing the docker socket command to access host system
+    ☐ Namespaces by running a simple alpine container
+        ☐ Example of PID namespace with help of docker container
+        ☐ pid with host option
+    ☐ Capabilities with help of CAP_NET_RAW and alpine docker container
+        ☐ privileged with true option
+    ☐ Capabilities escape scenario and exploitation
+        ☐ SSH into ctf vm
+        ☐ exec into the sysmon container
+        ☐ checking the capabilities inside the container and identifies sys_ptrace
+        ☐ identifying the pid=host by running top command
+        ☐ creating the reverse shell payload in student vm
+        ☐ trasnferring the exploit to container using simple http server
+        ☐ exploiting the root process in host system by injecting payload
+        ☐ reverse shell with root access in the host system
+    ☐ Docker API Misconfiguration scenarion and exploitation
+        ☐ checking for the open ports using nc
+        ☐ performing the basic API calls using curl for endpoint
+        ☐ using the docker with host parameter to connect via API server
+        ☐ accessing the remote host using the docker api
+Auditing Docker containers(40-Minutes):
+    ☐ Docker images, containers audit
+        ☐ checksum and content trust
+        ☐ known vulnerabilities inside the image using vulners
+        ☐ inspecting for the resources and information exposed
+        ☐ environment variables and metadata
+        ☐ integrity checks using the docker diff
+    ☐ Docker networks, volumes audit
+        ☐ inspecting docker networks
+        ☐ inspecting docker volumes
+        ☐ checking for sensitive data inside dangling volumes
+        ☐ checking for networks with exposed services and resources
+    ☐ Docker runtime and registry audit
+        ☐ checking for dameon configuration
+        ☐ registry secrets in the docker config
+        ☐ listening to all docker system events
+        ☐ checking for private registry configs
+    ☐ Docker CIS benchmarks security
+        ☐ run the docker-bench script
+        ☐ explaination about what checks it does and results
+    ☐ amicontained container for the runtime, capabilities, privileges, profiles
+Extra(15-Minutes):
+    ☐ Linux Security Module with help of apparmor profile and nginx docker container
+    ☐ Control Groups with help of cpushares and apine docker container and htop
+    ☐ Contained.af fun game
+Wrapup(10-Minutes):
+    ☐ About Appsecco
+    ☐ upcoming trainings and conferences
+    ☐ about trainer
+Resources & References(5-Minutes):
+    ☐ List of resources used for this workshop
+    ☐ References for the future learning
+    ☐ Conclusion
